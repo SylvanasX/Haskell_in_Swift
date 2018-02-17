@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Haskell_in_Swfit_Example' do
+  pod 'Haskell_in_Swfit', :path => '../'
+
+  target 'Haskell_in_Swfit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
