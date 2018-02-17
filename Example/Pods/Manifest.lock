@@ -1,0 +1,16 @@
+PODS:
+  - Haskell_in_Swfit (0.1.0)
+
+DEPENDENCIES:
+  - Haskell_in_Swfit (from `../`)
+
+EXTERNAL SOURCES:
+  Haskell_in_Swfit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Haskell_in_Swfit: f12beb70a85efe90b1fc6e2a0dfcdff57bad1da5
+
+PODFILE CHECKSUM: b342d369cd4d1aaa6a90c75dc01f2176a4fb5ce9
+
+COCOAPODS: 1.4.0

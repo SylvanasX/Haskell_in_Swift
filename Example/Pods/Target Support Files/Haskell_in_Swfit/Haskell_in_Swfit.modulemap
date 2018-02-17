@@ -1,0 +1,6 @@
+framework module Haskell_in_Swfit {
+  umbrella header "Haskell_in_Swfit-umbrella.h"
+
+  export *
+  module * { export * }
+}

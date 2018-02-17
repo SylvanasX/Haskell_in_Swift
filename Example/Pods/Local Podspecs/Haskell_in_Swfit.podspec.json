@@ -1,0 +1,22 @@
+{
+  "name": "Haskell_in_Swfit",
+  "version": "0.1.0",
+  "summary": "A short description of Haskell_in_Swfit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SylvanasX/Haskell_in_Swfit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SylvanasX": "10393625@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/SylvanasX/Haskell_in_Swfit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Haskell_in_Swfit/Classes/**/*"
+}
