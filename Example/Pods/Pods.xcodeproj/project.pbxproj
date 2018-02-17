@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072FB48AAD175EACF9AF0C6B96F72540 /* Haskell_in_Swfit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1FF696808A7AF35001848C039847FA /* Haskell_in_Swfit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		072FB48AAD175EACF9AF0C6B96F72540 /* Haskell_in_Swfit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DE3238EDD9E0C52632EDB70A460D23 /* Haskell_in_Swfit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D2BDE3B9D4D0398EE62227E6DE83108 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89FFE6D965CE6696EC23F53A5250E4 /* Curry.swift */; };
 		268F8C5D2F2C2596A3B4CB332B3107F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		28E85F1829F1FA83B3E6AF941D3A26A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3D062E37858CA5E2E39EB9FF0711F02C /* Haskell_in_Swfit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E57CB458B8BE21BD63BE81D1C6728E /* Haskell_in_Swfit-dummy.m */; };
 		4DD95C5F2E5019521A60903A44D32364 /* Pods-Haskell_in_Swfit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D57C814F326C059A4387506A8C8CA4 /* Pods-Haskell_in_Swfit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		770FBBAB680E5C9BD0DAFBB40D1A1EAA /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CE807D7F18E23149A21274F62692A /* ReplaceMe.swift */; };
 		8990300B7897DBB8D3A966D4CA5F3069 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		8A7DCD5319929D633183358FB5658256 /* Pods-Haskell_in_Swfit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 130AA1495F0ACDF25EDAF26D20DB1C0C /* Pods-Haskell_in_Swfit_Tests-dummy.m */; };
-		8F07024FCB752801FEF993743AB10DE6 /* Haskell_in_Swfit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 321371BA1AAF85B849C28CA6D5D89B51 /* Haskell_in_Swfit-dummy.m */; };
 		B3D36DC1ECBF815EE05ADC9355DE460F /* Pods-Haskell_in_Swfit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED722C95AF6477626DEEB7A7685AD7AD /* Pods-Haskell_in_Swfit_Example-dummy.m */; };
 		E56D5BB09A46E15FCA65636B52944CEE /* Pods-Haskell_in_Swfit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81780953FEBE3F1B366CD8C037CA41A4 /* Pods-Haskell_in_Swfit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -30,41 +30,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		032E13FD3544A4DC73F6550037DE60BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E89FFE6D965CE6696EC23F53A5250E4 /* Curry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Haskell_in_Swfit/Classes/Curry.swift; sourceTree = "<group>"; };
 		130AA1495F0ACDF25EDAF26D20DB1C0C /* Pods-Haskell_in_Swfit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Haskell_in_Swfit_Tests-dummy.m"; sourceTree = "<group>"; };
+		177A175D4F49FF1F3148F4AF0AC403F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1DF3AD9D239FCE2B74D9F1255EFF741D /* Pods-Haskell_in_Swfit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haskell_in_Swfit_Example-resources.sh"; sourceTree = "<group>"; };
 		1F6853FFB3B3784F000184C944ACA2E5 /* Pods-Haskell_in_Swfit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Haskell_in_Swfit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		321371BA1AAF85B849C28CA6D5D89B51 /* Haskell_in_Swfit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haskell_in_Swfit-dummy.m"; sourceTree = "<group>"; };
+		20924E9A90510090BD0DE1A20E5FFDC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1C96D1072DD45DD48C7671C869CFDC /* Haskell_in_Swfit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haskell_in_Swfit-prefix.pch"; sourceTree = "<group>"; };
 		40D57C814F326C059A4387506A8C8CA4 /* Pods-Haskell_in_Swfit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Haskell_in_Swfit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		438C4042B656D54D34BDCF35F9CB7C68 /* Pods-Haskell_in_Swfit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haskell_in_Swfit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4C4D293AEA5CB9B9833CB888A04D651D /* Haskell_in_Swfit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haskell_in_Swfit-prefix.pch"; sourceTree = "<group>"; };
-		59970675D66B726D10CFF33466F32141 /* Haskell_in_Swfit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haskell_in_Swfit.xcconfig; sourceTree = "<group>"; };
+		4E0020948FE7A95DE1558BE464F66B29 /* Haskell_in_Swfit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Haskell_in_Swfit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5A0F0CF0B33356C4DB7572DBB0CA0867 /* Pods_Haskell_in_Swfit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Haskell_in_Swfit_Example.framework; path = "Pods-Haskell_in_Swfit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4CFEB885E832461CED5D28ACAD74B0 /* Pods-Haskell_in_Swfit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haskell_in_Swfit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5ED9E05F7695F8959710ED9C142C3603 /* Pods-Haskell_in_Swfit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Haskell_in_Swfit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		622CE807D7F18E23149A21274F62692A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Haskell_in_Swfit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6E1FF696808A7AF35001848C039847FA /* Haskell_in_Swfit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haskell_in_Swfit-umbrella.h"; sourceTree = "<group>"; };
+		67DE3238EDD9E0C52632EDB70A460D23 /* Haskell_in_Swfit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haskell_in_Swfit-umbrella.h"; sourceTree = "<group>"; };
 		733C6BEFACC0F8970A139D4A3AD54AF5 /* Pods-Haskell_in_Swfit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haskell_in_Swfit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		81780953FEBE3F1B366CD8C037CA41A4 /* Pods-Haskell_in_Swfit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Haskell_in_Swfit_Example-umbrella.h"; sourceTree = "<group>"; };
 		85C47082812AFD9427714ABFF10C8FBB /* Pods-Haskell_in_Swfit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haskell_in_Swfit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8867B03973F8A88EDD1488CB6FA6AAA9 /* Haskell_in_Swfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haskell_in_Swfit.framework; path = Haskell_in_Swfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCE5359229F07FA0E59FDE38850F580 /* Pods-Haskell_in_Swfit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Haskell_in_Swfit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8DE88FCEA8A62E57A5B219A70892C73A /* Pods_Haskell_in_Swfit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Haskell_in_Swfit_Tests.framework; path = "Pods-Haskell_in_Swfit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F103B8CBF7BC15B6DC4A9E20D6AF189 /* Haskell_in_Swfit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Haskell_in_Swfit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		92F80BD3B85DD8044A756AA70A576B2A /* Pods-Haskell_in_Swfit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Haskell_in_Swfit_Example.modulemap"; sourceTree = "<group>"; };
-		936B4B08C5EED6658CD06EF2C20D7745 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99D1978863338258DCF09999FBF0EF07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C094C0934F3442B306E1741BB19780CF /* Haskell_in_Swfit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Haskell_in_Swfit.modulemap; sourceTree = "<group>"; };
+		A0E57CB458B8BE21BD63BE81D1C6728E /* Haskell_in_Swfit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haskell_in_Swfit-dummy.m"; sourceTree = "<group>"; };
+		A39F02457367663A9CE4843BBC3F9BA9 /* Haskell_in_Swfit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haskell_in_Swfit.xcconfig; sourceTree = "<group>"; };
+		C452E4110485C73F820AB0253BE32AF3 /* Haskell_in_Swfit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Haskell_in_Swfit.modulemap; sourceTree = "<group>"; };
 		C95366226F2B48A836DB99DF4AD1050C /* Pods-Haskell_in_Swfit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haskell_in_Swfit_Tests-resources.sh"; sourceTree = "<group>"; };
 		CFF177A239D98D9D914C2929B1C4CF26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D065E291BC011F6E0F762AB3D2BB05CE /* Pods-Haskell_in_Swfit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Haskell_in_Swfit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D147526A7ED28C419F814263A9251054 /* Pods-Haskell_in_Swfit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Haskell_in_Swfit_Tests.modulemap"; sourceTree = "<group>"; };
 		ED4ADFC8759A890B6D5BF08C2CCC8E35 /* Pods-Haskell_in_Swfit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haskell_in_Swfit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED722C95AF6477626DEEB7A7685AD7AD /* Pods-Haskell_in_Swfit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Haskell_in_Swfit_Example-dummy.m"; sourceTree = "<group>"; };
+		F3A7A9664EC7D124C0F23B27A87E8810 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		FAB50B0CEA3DE6855D2F80CC1F191D00 /* Pods-Haskell_in_Swfit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haskell_in_Swfit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		FB4C531C619D230507735D67D8C8902E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		08AF04B678F8BEB4D0E81F62D3B8CCD9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B669DDA7A094AE1192B3D5CA63F54697 /* Haskell_in_Swfit */,
+				6D5C80BF3F0AE56B65FB72D83DB8217B /* Haskell_in_Swfit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -119,6 +119,16 @@
 			);
 			name = "Pods-Haskell_in_Swfit_Example";
 			path = "Target Support Files/Pods-Haskell_in_Swfit_Example";
+			sourceTree = "<group>";
+		};
+		26ACDACA151087E0BCA4DFC23EAC0F4E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4E0020948FE7A95DE1558BE464F66B29 /* Haskell_in_Swfit.podspec */,
+				177A175D4F49FF1F3148F4AF0AC403F5 /* LICENSE */,
+				F3A7A9664EC7D124C0F23B27A87E8810 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		2E7E24E9DC1EDBB69286AE535A2CB53D /* Pods-Haskell_in_Swfit_Tests */ = {
@@ -148,14 +158,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5C72F0146ED7B3C47FB7FC9EFBFD9560 /* Pod */ = {
+		6D5C80BF3F0AE56B65FB72D83DB8217B /* Haskell_in_Swfit */ = {
 			isa = PBXGroup;
 			children = (
-				8F103B8CBF7BC15B6DC4A9E20D6AF189 /* Haskell_in_Swfit.podspec */,
-				936B4B08C5EED6658CD06EF2C20D7745 /* LICENSE */,
-				FB4C531C619D230507735D67D8C8902E /* README.md */,
+				0E89FFE6D965CE6696EC23F53A5250E4 /* Curry.swift */,
+				26ACDACA151087E0BCA4DFC23EAC0F4E /* Pod */,
+				DDEFCB61648C4BBFF3ACED4C9FC695C8 /* Support Files */,
 			);
-			name = Pod;
+			name = Haskell_in_Swfit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -179,17 +190,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B669DDA7A094AE1192B3D5CA63F54697 /* Haskell_in_Swfit */ = {
-			isa = PBXGroup;
-			children = (
-				622CE807D7F18E23149A21274F62692A /* ReplaceMe.swift */,
-				5C72F0146ED7B3C47FB7FC9EFBFD9560 /* Pod */,
-				EF3BC079AB85523FEDE35F938515F3E4 /* Support Files */,
-			);
-			name = Haskell_in_Swfit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,15 +206,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EF3BC079AB85523FEDE35F938515F3E4 /* Support Files */ = {
+		DDEFCB61648C4BBFF3ACED4C9FC695C8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C094C0934F3442B306E1741BB19780CF /* Haskell_in_Swfit.modulemap */,
-				59970675D66B726D10CFF33466F32141 /* Haskell_in_Swfit.xcconfig */,
-				321371BA1AAF85B849C28CA6D5D89B51 /* Haskell_in_Swfit-dummy.m */,
-				4C4D293AEA5CB9B9833CB888A04D651D /* Haskell_in_Swfit-prefix.pch */,
-				6E1FF696808A7AF35001848C039847FA /* Haskell_in_Swfit-umbrella.h */,
-				032E13FD3544A4DC73F6550037DE60BC /* Info.plist */,
+				C452E4110485C73F820AB0253BE32AF3 /* Haskell_in_Swfit.modulemap */,
+				A39F02457367663A9CE4843BBC3F9BA9 /* Haskell_in_Swfit.xcconfig */,
+				A0E57CB458B8BE21BD63BE81D1C6728E /* Haskell_in_Swfit-dummy.m */,
+				3C1C96D1072DD45DD48C7671C869CFDC /* Haskell_in_Swfit-prefix.pch */,
+				67DE3238EDD9E0C52632EDB70A460D23 /* Haskell_in_Swfit-umbrella.h */,
+				20924E9A90510090BD0DE1A20E5FFDC4 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Haskell_in_Swfit";
@@ -289,7 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06CF0358881C2F3771BBA369BA75A1E2 /* Build configuration list for PBXNativeTarget "Haskell_in_Swfit" */;
 			buildPhases = (
-				5CBADD230CBF30CFBF2D0F7D15704C52 /* Sources */,
+				824432D988893EBD9AFABC7F7140B32C /* Sources */,
 				FA266D7838DF034276E0306CA1C4ACE7 /* Frameworks */,
 				180822AD5F8F12F47719B36FE8334FE2 /* Headers */,
 			);
@@ -331,12 +331,12 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CBADD230CBF30CFBF2D0F7D15704C52 /* Sources */ = {
+		824432D988893EBD9AFABC7F7140B32C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F07024FCB752801FEF993743AB10DE6 /* Haskell_in_Swfit-dummy.m in Sources */,
-				770FBBAB680E5C9BD0DAFBB40D1A1EAA /* ReplaceMe.swift in Sources */,
+				1D2BDE3B9D4D0398EE62227E6DE83108 /* Curry.swift in Sources */,
+				3D062E37858CA5E2E39EB9FF0711F02C /* Haskell_in_Swfit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +430,7 @@
 		};
 		421959F055E6EACD8821B65CEB5FE9E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59970675D66B726D10CFF33466F32141 /* Haskell_in_Swfit.xcconfig */;
+			baseConfigurationReference = A39F02457367663A9CE4843BBC3F9BA9 /* Haskell_in_Swfit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -548,7 +548,7 @@
 		};
 		771B90CC30A861C95F922CC4A995F60D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59970675D66B726D10CFF33466F32141 /* Haskell_in_Swfit.xcconfig */;
+			baseConfigurationReference = A39F02457367663A9CE4843BBC3F9BA9 /* Haskell_in_Swfit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
