@@ -14,16 +14,31 @@ struct Person {
     var name: String
 }
 
+func incr(_ a: Int) -> Int {
+    return a + 1
+}
+
+func sq(_ a: Int) -> Int {
+    return a * a
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         testCurry()
+        
+        testOperators()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func testOperators() {
+        let r1 = 2 |> incr >>> sq >>> String.init
+        print(r1)
     }
     
     func testCurry() {
