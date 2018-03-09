@@ -14,13 +14,7 @@ struct Person {
     var name: String
 }
 
-func incr(_ a: Int) -> Int {
-    return a + 1
-}
 
-func sq(_ a: Int) -> Int {
-    return a * a
-}
 
 class ViewController: UIViewController {
 
@@ -29,6 +23,8 @@ class ViewController: UIViewController {
         testCurry()
         
         testOperators()
+        
+        testCompute()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +43,39 @@ class ViewController: UIViewController {
         print(p.name)
     }
 
+    func testCompute() {
+        let x = 1 |> incr >>> computeAndPrint >=> computeAndPrint
+        print(x)
+    }
 }
+
+func incr(_ a: Int) -> Int {
+    return a + 1
+}
+
+func sq(_ a: Int) -> Int {
+    return a * a
+}
+
+func computeAndPrint(_ a: Int) -> (Int, [String]) {
+    let x = a + 1
+    let s = "compute \(x)"
+    return (x, [s])
+}
+
+func testBtn() {
+    var btn = UIButton()
+    btn |> setBtnBGColor <> setBtnTitle
+}
+
+func setBtnBGColor(_ b: inout UIButton) {
+    b.backgroundColor = .red
+}
+
+func setBtnTitle(_ b: inout UIButton) {
+    b.setTitle("123", for: .normal)
+}
+
 
 
 

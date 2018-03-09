@@ -12,9 +12,24 @@ precedencegroup LeftApplyPrecedence {
 
 precedencegroup FunctionCompositionPrecedence {
     associativity: right
+    higherThan: LeftApplyPrecedence, EffectfulComposition
+}
+
+precedencegroup EffectfulComposition {
+    associativity: left
     higherThan: LeftApplyPrecedence
+}
+
+precedencegroup SingleTypeComposition {
+    associativity: left
+    higherThan: LeftApplyPrecedence
+    
 }
 
 infix operator |> : LeftApplyPrecedence
 
 infix operator >>> : FunctionCompositionPrecedence
+
+infix operator >=> : EffectfulComposition
+
+infix operator <> : SingleTypeComposition
