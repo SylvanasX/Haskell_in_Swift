@@ -18,18 +18,31 @@ struct Person {
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        testCurry()
-        
-        testOperators()
-        
-        testCompute()
+//        testCurry()
+//
+//        testOperators()
+//
+//        testCompute()
+        test3Btn()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func test3Btn() {
+        btn |>
+            baseButtonStyle
+            <> filledButtonStyle
+            <> {
+                $0.backgroundColor = .red
+            }
+            <> borderStyle(color: .blue, width: 2.0)
+        
+    }
+    
+    func testMap() {
+        let x = [1, 2, 3].map(incr >>> sq)
+        print(x)
     }
     
     func testOperators() {
@@ -44,10 +57,38 @@ class ViewController: UIViewController {
     }
 
     func testCompute() {
-        let x = 1 |> incr >>> computeAndPrint >=> computeAndPrint
+        let x = 3 |> incr >>> computeAndPrint >=> computeAndPrint
         print(x)
     }
 }
+
+
+func borderStyle(color: UIColor, width: CGFloat) -> (UIView) -> Void {
+    return {
+        $0.layer.borderColor = color.cgColor
+        $0.layer.borderWidth = width
+    }
+}
+
+
+func baseButtonStyle(_ button: UIButton) {
+    button.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
+    button.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
+}
+
+func filledButtonStyle(_ button: UIButton)  {
+    button.backgroundColor = .black
+    button.tintColor = .white
+}
+
+func roundedButtonStyle(_ button: UIButton)  {
+    button.clipsToBounds = true
+    button.layer.cornerRadius = 6
+}
+
+
+
+
 
 func incr(_ a: Int) -> Int {
     return a + 1

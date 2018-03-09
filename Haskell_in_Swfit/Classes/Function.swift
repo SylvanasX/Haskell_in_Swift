@@ -39,3 +39,13 @@ public func <> <A> (
         g(&a)
     }
 }
+
+public func <> <A: AnyObject> (
+    _ f: @escaping (A) -> Void,
+    _ g: @escaping (A) -> Void
+    ) -> (A) -> Void {
+    return { a in
+        f(a)
+        g(a)
+    }
+}
