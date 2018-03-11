@@ -31,6 +31,13 @@ public func >=> <A, B, C> (
 }
 
 public func <> <A> (
+    _ f: @escaping (A) -> A,
+    _ g: @escaping (A) -> A
+    ) -> (A) -> A {
+    return f >>> g
+}
+
+public func <> <A> (
     _ f: @escaping (inout A) -> Void,
     _ g: @escaping (inout A) -> Void
     ) -> (inout A) -> Void {
