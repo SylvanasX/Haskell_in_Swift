@@ -49,3 +49,29 @@ public func <> <A: AnyObject> (
         g(a)
     }
 }
+
+public func flip <A, B, C> (
+    _ f: @escaping (A) -> (B) -> (C)
+    ) -> (B) -> (A) -> C {
+    return { b in { a in f(a)(b) } }
+}
+
+public func flip <A, C> (
+    _ f: @escaping (A) -> () -> C
+    ) -> () -> (A) -> C {
+    return { { a in f(a)() } }
+}
+
+public func zurry <A> (
+    _ f: () -> A
+    ) -> A {
+    return f()
+}
+
+public func map <A, B> (_ f: @escaping (A) -> B) -> ([A]) -> [B] {
+    return { $0.map(f) }
+}
+
+public func filter <A> (_ p: @escaping (A) -> Bool) -> ([A]) -> [A] {
+    return { $0.filter(p) }
+}

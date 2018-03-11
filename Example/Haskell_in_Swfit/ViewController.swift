@@ -26,7 +26,24 @@ class ViewController: UIViewController {
 //        testOperators()
 //
 //        testCompute()
-        test3Btn()
+//        test3Btn()
+        testMF()
+    }
+    
+    func testMF() {
+        let x = Array(1...10)
+            |> map(incr)
+            >>> filter({ $0 > 6 })
+        print(x)
+    }
+    
+    func unboundMethods() {
+        let x = String.uppercased(with:)
+        let y = Locale(identifier: "en") |> flip(x)
+        let z = "zzz" |> y
+       
+        let a = flip(String.uppercased) |> zurry
+        
     }
     
     func test3Btn() {
@@ -51,9 +68,7 @@ class ViewController: UIViewController {
     }
     
     func testCurry() {
-        let p = curry(Person.init)(11)("mike")
-        print(p.age)
-        print(p.name)
+        let utf8String = String.Encoding.utf8 |> flip(curry(String.init(data:encoding:)))
     }
 
     func testCompute() {
@@ -68,6 +83,11 @@ func borderStyle(color: UIColor, width: CGFloat) -> (UIView) -> Void {
         $0.layer.borderColor = color.cgColor
         $0.layer.borderWidth = width
     }
+}
+
+func greet(at date: Date, name: String) -> String {
+    let seconds = Int(date.timeIntervalSince1970) % 60
+    return "Hello \(seconds) \(name)"
 }
 
 
