@@ -35,6 +35,11 @@ class ViewController: UIViewController {
             |> map(incr)
             >>> filter({ $0 > 6 })
         print(x)
+        
+        let z = 1 |> incr
+                    <> sq
+                    <> incr
+        print(z)
     }
     
     func unboundMethods() {
