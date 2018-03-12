@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 //
 //        testCompute()
 //        test3Btn()
-        testMF()
+        let f = curry(String.init(data:encoding:))
     }
     
     func testMF() {
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         let z = "zzz" |> y
        
         let a = flip(String.uppercased) |> zurry
+        
         
     }
     
