@@ -23,7 +23,6 @@ precedencegroup EffectfulComposition {
 precedencegroup SingleTypeComposition {
     associativity: left
     higherThan: LeftApplyPrecedence
-    
 }
 
 infix operator |> : LeftApplyPrecedence

@@ -18,18 +18,54 @@ struct Person {
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        testCurry()
-        
-        testOperators()
-        
-        testCompute()
+//        testCurry()
+//
+//        testOperators()
+//
+//        testCompute()
+//        test3Btn()
+        let f = curry(String.init(data:encoding:))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func testMF() {
+        let x = Array(1...10)
+            |> map(incr)
+            >>> filter({ $0 > 6 })
+        print(x)
+        
+        let z = 1 |> incr
+                    <> sq
+                    <> incr
+        print(z)
+    }
+    
+    func unboundMethods() {
+        let x = String.uppercased(with:)
+        let y = Locale(identifier: "en") |> flip(x)
+        let z = "zzz" |> y
+       
+        let a = flip(String.uppercased) |> zurry
+        
+        
+    }
+    
+    func test3Btn() {
+        btn |>
+            baseButtonStyle
+            <> filledButtonStyle
+            <> {
+                $0.backgroundColor = .red
+            }
+            <> borderStyle(color: .blue, width: 2.0)
+        
+    }
+    
+    func testMap() {
+        let x = [1, 2, 3].map(incr >>> sq)
+        print(x)
     }
     
     func testOperators() {
@@ -38,16 +74,47 @@ class ViewController: UIViewController {
     }
     
     func testCurry() {
-        let p = curry(Person.init)(11)("mike")
-        print(p.age)
-        print(p.name)
+        let utf8String = String.Encoding.utf8 |> flip(curry(String.init(data:encoding:)))
     }
 
     func testCompute() {
-        let x = 1 |> incr >>> computeAndPrint >=> computeAndPrint
+        let x = 3 |> incr >>> computeAndPrint >=> computeAndPrint
         print(x)
     }
 }
+
+
+func borderStyle(color: UIColor, width: CGFloat) -> (UIView) -> Void {
+    return {
+        $0.layer.borderColor = color.cgColor
+        $0.layer.borderWidth = width
+    }
+}
+
+func greet(at date: Date, name: String) -> String {
+    let seconds = Int(date.timeIntervalSince1970) % 60
+    return "Hello \(seconds) \(name)"
+}
+
+
+func baseButtonStyle(_ button: UIButton) {
+    button.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
+    button.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
+}
+
+func filledButtonStyle(_ button: UIButton)  {
+    button.backgroundColor = .black
+    button.tintColor = .white
+}
+
+func roundedButtonStyle(_ button: UIButton)  {
+    button.clipsToBounds = true
+    button.layer.cornerRadius = 6
+}
+
+
+
+
 
 func incr(_ a: Int) -> Int {
     return a + 1
