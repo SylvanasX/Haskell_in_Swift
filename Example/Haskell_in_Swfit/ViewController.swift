@@ -62,7 +62,12 @@ class ViewController: UIViewController {
             |> (prop(\User.location.name)) { _ in "TestLocation" }
 //        print(u1) // u1
         
-        let u2 = (42, user) |> first(incr) |> (second <<< prop(\User.name)) { _ in "u2" }
+        let u2 = (42, user)
+            |> first(incr)
+            <> (second <<< prop(\User.name)) { _ in "u2" }
+            <> (second <<< prop(\User.favoriteFoods) <<< map <<< prop(\Food.name)) { $0 + "!" }
+            <> (second <<< prop(\User.location.name)) { _ in "test l" }
+        print(u2)
     }
     
     func testMF() {

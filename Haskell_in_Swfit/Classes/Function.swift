@@ -19,6 +19,15 @@ public func >>> <A, B, C> (f: @escaping (A) -> B, g: @escaping (B) -> C) -> ((A)
     }
 }
 
+public func <<< <A, B, C> (
+    _ g: @escaping (B) -> C,
+    _ f: @escaping (A) -> B
+    ) -> (A) -> C {
+    return { a in
+        g(f(a))
+    }
+}
+
 public func >=> <A, B, C> (
     _ f: @escaping (A) -> (B, [String]),
     _ g: @escaping (B) -> (C, [String])
@@ -79,8 +88,30 @@ public func map <A, B> (_ f: @escaping (A) -> B) -> ([A]) -> [B] {
     return { $0.map(f) }
 }
 
+public func map <A, B> (_ f: @escaping (A) -> B) -> (A?) -> B? {
+    return {
+        $0.map(f)
+    }
+}
+
 public func filter <A> (_ p: @escaping (A) -> Bool) -> ([A]) -> [A] {
     return { $0.filter(p) }
+}
+
+public func first <A, B, C> (
+    _ f: @escaping (A) -> C
+    ) -> ((A, B)) -> (C, B) {
+    return {
+        (f($0.0), $0.1)
+    }
+}
+
+public func second <A, B, C> (
+    _ f: @escaping (B) -> C
+    ) -> ((A, B)) -> (A, C) {
+    return {
+        ($0.0, f($0.1))
+    }
 }
 
 public func prop <Root, Value> (_ kp: WritableKeyPath<Root, Value>) -> (@escaping (Value) -> Value) -> (Root) -> Root {

@@ -25,6 +25,10 @@ precedencegroup SingleTypeComposition {
     higherThan: LeftApplyPrecedence
 }
 
+precedencegroup BackwarksComposition {
+    associativity: right
+}
+
 infix operator |> : LeftApplyPrecedence
 
 infix operator >>> : FunctionCompositionPrecedence
@@ -32,3 +36,5 @@ infix operator >>> : FunctionCompositionPrecedence
 infix operator >=> : EffectfulComposition
 
 infix operator <> : SingleTypeComposition
+
+infix operator <<< : BackwarksComposition
