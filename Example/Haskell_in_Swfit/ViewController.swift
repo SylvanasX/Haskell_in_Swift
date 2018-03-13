@@ -14,6 +14,21 @@ struct Person {
     var name: String
 }
 
+struct Food {
+    var name: String
+}
+
+struct Location {
+    var name: String
+}
+
+struct User {
+    var favoriteFoods: [Food]
+    var location: Location
+    var name: String
+}
+
+
 
 
 class ViewController: UIViewController {
@@ -27,7 +42,27 @@ class ViewController: UIViewController {
 //
 //        testCompute()
 //        test3Btn()
-        let f = curry(String.init(data:encoding:))
+//        let f = curry(String.init(data:encoding:))
+        testKeyPath()
+    }
+    
+    
+    func testKeyPath() {
+        let user = User(
+            favoriteFoods: [
+                Food(name: "Tacos"),
+                Food(name: "Nachos")
+            ],
+            location: Location(name: "Brooklyn"),
+            name: "Blob"
+        )
+        
+        let u1 = user
+            |> (prop(\User.name)) { _ in "u1"}
+            |> (prop(\User.location.name)) { _ in "TestLocation" }
+//        print(u1) // u1
+        
+        let u2 = (42, user) |> first(incr) |> (second <<< prop(\User.name)) { _ in "u2" }
     }
     
     func testMF() {

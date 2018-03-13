@@ -82,3 +82,14 @@ public func map <A, B> (_ f: @escaping (A) -> B) -> ([A]) -> [B] {
 public func filter <A> (_ p: @escaping (A) -> Bool) -> ([A]) -> [A] {
     return { $0.filter(p) }
 }
+
+public func prop <Root, Value> (_ kp: WritableKeyPath<Root, Value>) -> (@escaping (Value) -> Value) -> (Root) -> Root {
+    return { update in
+        { root in
+            var copy = root
+            copy[keyPath: kp] = update(copy[keyPath: kp])
+            return copy
+        }
+    }
+}
+
